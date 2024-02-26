@@ -1,4 +1,0 @@
-repository "PIM 2024.1@JoanaNegretto@cloud"
-  path "/"
-    br "/main"
-    co "/main"
