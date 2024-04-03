@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ba4540d049978a84e83c37159afd4050
+timeCreated: 1548580504
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 105735
+  packageName: Grab It
+  packageVersion: 1.0
+  assetPath: Assets/GrabIt/Documentation/Instructions.pdf
+  uploadId: 290321

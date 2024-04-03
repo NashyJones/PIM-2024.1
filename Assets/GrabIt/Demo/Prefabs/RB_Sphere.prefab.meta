@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1ceb36172114faa4d9e3ce406143b749
+timeCreated: 1548573777
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 105735
+  packageName: Grab It
+  packageVersion: 1.0
+  assetPath: Assets/GrabIt/Demo/Prefabs/RB_Sphere.prefab
+  uploadId: 290321

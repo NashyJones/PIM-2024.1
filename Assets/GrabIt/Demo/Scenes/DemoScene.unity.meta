@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f718597430274d459e6764c623401c0
+timeCreated: 1548568539
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 105735
+  packageName: Grab It
+  packageVersion: 1.0
+  assetPath: Assets/GrabIt/Demo/Scenes/DemoScene.unity
+  uploadId: 290321

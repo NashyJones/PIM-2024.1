@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 410b3967f1683b846aebfd0ec5d043f8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 105735
+  packageName: Grab It
+  packageVersion: 1.0
+  assetPath: Assets/GrabIt/Demo/Materials/Mat_1.mat
+  uploadId: 290321
