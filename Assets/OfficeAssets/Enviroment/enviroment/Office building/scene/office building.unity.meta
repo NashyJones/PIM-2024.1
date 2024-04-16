@@ -12,5 +12,6 @@ AssetOrigin:
   productId: 82282
   packageName: POLYGON office building
   packageVersion: 1.0
-  assetPath: Assets/Enviroment/enviroment/Office building/scene/office building.unity
+  assetPath: Assets/OfficeAssets/Enviroment/enviroment/Office building/scene/office
+    building.unity
   uploadId: 252208

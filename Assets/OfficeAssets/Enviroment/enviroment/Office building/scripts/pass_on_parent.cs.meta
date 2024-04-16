@@ -14,5 +14,5 @@ AssetOrigin:
   productId: 82282
   packageName: POLYGON office building
   packageVersion: 1.0
-  assetPath: Assets/Enviroment/enviroment/Office building/scripts/pass_on_parent.cs
+  assetPath: Assets/OfficeAssets/Enviroment/enviroment/Office building/scripts/pass_on_parent.cs
   uploadId: 252208

@@ -87,6 +87,6 @@ AssetOrigin:
   productId: 82282
   packageName: POLYGON office building
   packageVersion: 1.0
-  assetPath: Assets/Enviroment/enviroment/Office building/textures/Props/used/exit
+  assetPath: Assets/OfficeAssets/Enviroment/enviroment/Office building/textures/Props/used/exit
     sign.png
   uploadId: 252208
