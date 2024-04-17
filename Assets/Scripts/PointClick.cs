@@ -40,7 +40,8 @@ public class PointClickInteraction : MonoBehaviour
                 // Perform interaction with the object (e.g., show UI, play animation, etc.)
                 Debug.Log("Interacted with: " + obj.name);
 
-                obj.GetComponent<IInteractable>().Interact(this);
+                if (obj.GetComponent<IInteractable>() != null)
+                        obj.GetComponent<IInteractable>().Interact(this);
 
             }
         }

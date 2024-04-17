@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150cf7940ab0e6c4bbaf184a87998a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyNeeded: 1
+  keyNeeded: 0
   gotKey: 0
   keyGameObject: {fileID: 0}
   txtToDisplay: {fileID: 0}
