@@ -5137,6 +5137,18 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3637
       objectReference: {fileID: 0}
+    - target: {fileID: 7245242209449219178, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245242209449219178, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.879
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245242209449219178, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.081
+      objectReference: {fileID: 0}
     - target: {fileID: 7266804053306676942, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5213,6 +5225,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7243913688165027134, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 269384178411290997}
     - targetCorrespondingSourceObject: {fileID: 5185919336745926354, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1051015148}
@@ -5229,6 +5244,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 174453428}
   m_SourcePrefab: {fileID: 100100000, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+--- !u!1 &269384178411290996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7243913688165027134, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+  m_PrefabInstance: {fileID: 269384178411290995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &269384178411290997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269384178411290996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171b1a2da4a4f842a978820b56ff177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

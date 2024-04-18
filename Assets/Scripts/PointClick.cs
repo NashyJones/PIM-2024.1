@@ -16,6 +16,8 @@ public class PointClickInteraction : MonoBehaviour
     
     public List<bool> taskCompletion = new List<bool>();
 
+    public int HiddenTasks = -1;
+
     public CanvasTextScript Canvas;
     [ HideInInspector ]
 
