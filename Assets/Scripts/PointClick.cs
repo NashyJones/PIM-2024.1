@@ -17,7 +17,9 @@ public class PointClickInteraction : MonoBehaviour
     public List<bool> taskCompletion = new List<bool>();
 
     public CanvasTextScript Canvas;
-   
+    [ HideInInspector ]
+
+    public List<string> inventory = new List<string>();
     public void refreshText ()
     {
         Canvas.refreshText ();
