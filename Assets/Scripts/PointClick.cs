@@ -23,6 +23,8 @@ public class PointClickInteraction : MonoBehaviour
    public  OnTaskCompleted taskCompleted;
 
     private bool isMiniGame = false;
+    public int tamanhoraycast;
+
 
 
     public CanvasTextScript Canvas;
@@ -54,7 +56,7 @@ public class PointClickInteraction : MonoBehaviour
             RaycastHit hit;
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, interactableLayer))
+            if (Physics.Raycast(ray, out hit, tamanhoraycast, interactableLayer))
             {
                 GameObject obj = hit.collider.gameObject;
                 // Perform interaction with the object (e.g., show UI, play animation, etc.)

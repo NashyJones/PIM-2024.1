@@ -347,6 +347,7 @@ MonoBehaviour:
   taskNames: []
   taskCompletion: 
   HiddenTasks: -1
+  tamanhoraycast: 2
   Canvas: {fileID: 8570918498499235130}
   inventory: []
 --- !u!1 &4459864850190357393
