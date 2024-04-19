@@ -8,6 +8,8 @@ public class Pickable : MonoBehaviour, IInteractable
     public string Key;
     public string Lock;
     public bool ShouldDisappear;
+    public AnimationCurve Curve;
+
     public void Interact(PointClickInteraction pointClick)
     {
         if (Lock != string.Empty)
@@ -23,18 +25,28 @@ public class Pickable : MonoBehaviour, IInteractable
 
                 }
             }
-            if (!complete) 
-            { 
+            if (!complete)
+            {
                 return;
             }
 
         }
-       
+        pointClick.taskCompleted += CompleteTask;
+        
 
-       //colocar isso em todo objeto de pegar pras quests
-        for (int i = 0; i < pointClick.taskObjects.Count; i++) 
-        { 
-            
+    }
+   
+    public void CompleteTask(PointClickInteraction pointClick) 
+    {
+        pointClick.taskCompleted -= CompleteTask;
+        
+
+
+
+        //colocar isso em todo objeto de pegar pras quests
+        for (int i = 0; i < pointClick.taskObjects.Count; i++)
+        {
+
             if (pointClick.taskObjects[i] == gameObject)
             {
                 pointClick.taskCompletion[i] = true;
@@ -51,11 +63,9 @@ public class Pickable : MonoBehaviour, IInteractable
         {
             gameObject.SetActive(false);
         }
-            
-       
+
 
     }
-   
 
     // Start is called before the first frame update
     void Start()
@@ -67,5 +77,11 @@ public class Pickable : MonoBehaviour, IInteractable
     void Update()
     {
         
+    }
+
+    public AnimationCurve hasCurve()
+    {
+        return Curve;
+
     }
 }

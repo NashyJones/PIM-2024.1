@@ -8,6 +8,10 @@ public class ClearedLevelScreen : MonoBehaviour, IInteractable
 {
     public string LevelName;
 
+    public AnimationCurve hasCurve()
+    {
+        return null;
+    }
 
     public void Interact(PointClickInteraction pointClick)
     {

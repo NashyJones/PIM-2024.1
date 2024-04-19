@@ -4,7 +4,11 @@ using UnityEngine;
 
 public interface IInteractable
 
+
 {
     void Interact(PointClickInteraction pointClick);
+    AnimationCurve hasCurve();
+
+
 
 }

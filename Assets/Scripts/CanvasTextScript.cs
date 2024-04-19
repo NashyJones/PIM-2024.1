@@ -7,6 +7,17 @@ public class CanvasTextScript : MonoBehaviour
 {
     public PointClickInteraction pointClick;
     public TMPro.TextMeshProUGUI textMeshPro;
+    public GameObject Minigamepannel;
+    public RectTransform Arrow;
+    public GameObject Bar;
+    private AnimationCurve CurrentCurve;
+    private Coroutine coroutine;
+   
+
+
+
+
+
     
         
     public void refreshText ()
@@ -68,6 +79,81 @@ public class CanvasTextScript : MonoBehaviour
         }
         return true;
     }
+
+
+    public void startMinigame (AnimationCurve curve)
+    {
+        CurrentCurve = curve;
+        Minigamepannel.SetActive(true);
+        coroutine = StartCoroutine(animation());
+        
+
+
+    }
+
+    private IEnumerator animation()
+    {
+        float time = 0;
+        float Maxtime = 0;
+
+        Maxtime = CurrentCurve.keys[CurrentCurve.keys.Length - 1].time;
+        bool forwardprogress = true;
+
+        while (true)
+        {
+            
+
+            if (forwardprogress)
+            {
+                if (time >= Maxtime)
+                {
+                    time = Maxtime;
+                    forwardprogress = false;
+                }
+                Arrow.anchoredPosition = new Vector2(Mathf.Lerp(-330, -36, CurrentCurve.Evaluate(time)), -130);
+                time += Time.deltaTime;
+            }
+            
+            else
+            {
+                if (time <= 0)
+                {
+                    time = 0;
+                    forwardprogress = true;
+                }
+                Arrow.anchoredPosition = new Vector2(Mathf.Lerp(-330, -36, CurrentCurve.Evaluate(time)), -130);
+                time -= Time.deltaTime;
+            }
+            yield return null;
+        }
+    }
+
+    public void hitTarget ()
+    {
+        if (Arrow.anchoredPosition.x>=-195 && Arrow.anchoredPosition.x <= -174)
+        {
+            finishMinigame();
+            pointClick.taskCompleted(pointClick);
+
+        }
+        else
+        {
+            StopCoroutine(coroutine);
+            coroutine = StartCoroutine(animation());
+            print ("fail");
+
+
+
+        }
+    }
+    public void finishMinigame()
+    {
+
+        Minigamepannel.SetActive(false);
+        StopCoroutine(coroutine);
+    }
+        
+
 
     // Start is called before the first frame update
     void Start()

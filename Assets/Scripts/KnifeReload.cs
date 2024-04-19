@@ -22,6 +22,11 @@ public class KnifeReload : MonoBehaviour, IInteractable
         }
     }
 
+    public AnimationCurve hasCurve()
+    {
+        return null;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -18,6 +18,13 @@ public class PointClickInteraction : MonoBehaviour
 
     public int HiddenTasks = -1;
 
+    public delegate void OnTaskCompleted(PointClickInteraction pointClick);
+
+   public  OnTaskCompleted taskCompleted;
+
+    private bool isMiniGame = false;
+
+
     public CanvasTextScript Canvas;
     [ HideInInspector ]
 
@@ -29,10 +36,19 @@ public class PointClickInteraction : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        taskCompleted += reactivateFPC;
+
     }
 
     void Update()
     {
+        if (isMiniGame)
+        {
+           if (Input.GetKeyDown (KeyCode.Space))
+            {
+                Canvas.hitTarget();
+            }
+        }
         if (Input.GetMouseButtonDown(0)) // Left mouse button clicked
         {
             RaycastHit hit;
@@ -45,9 +61,28 @@ public class PointClickInteraction : MonoBehaviour
                 Debug.Log("Interacted with: " + obj.name);
 
                 if (obj.GetComponent<IInteractable>() != null)
-                        obj.GetComponent<IInteractable>().Interact(this);
+                {
+                    obj.GetComponent<IInteractable>().Interact(this);
+
+                   if (obj.GetComponent<IInteractable>().hasCurve() != null)
+                    {
+                        isMiniGame = true;
+                        Canvas.startMinigame(obj.GetComponent<IInteractable>().hasCurve());
+                        GetComponent<FirstPersonController>().enabled = false;
+                        
+                    }
+                    
+                }
+                       
 
             }
         }
+    }
+
+    public void reactivateFPC(PointClickInteraction pointClick)
+    {
+        GetComponent<FirstPersonController>().enabled = true;
+        isMiniGame = false;
+
     }
 }
