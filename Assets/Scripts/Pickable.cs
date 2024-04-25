@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //colocar interface de interact
 public class Pickable : MonoBehaviour, IInteractable
@@ -9,6 +11,10 @@ public class Pickable : MonoBehaviour, IInteractable
     public string Lock;
     public bool ShouldDisappear;
     public AnimationCurve Curve;
+    public float Tempo;
+    [HideInInspector]
+    public float TempoRestante;
+    private Coroutine Timer;
 
     public void Interact(PointClickInteraction pointClick)
     {
@@ -32,14 +38,38 @@ public class Pickable : MonoBehaviour, IInteractable
 
         }
         pointClick.taskCompleted += CompleteTask;
+        Timer = StartCoroutine(TimerCoroutine(pointClick));
+
         
 
     }
+
+    private IEnumerator TimerCoroutine(PointClickInteraction pointClick)
+    {
+        TempoRestante = Tempo;
+        pointClick.Canvas.RefreshTimerText(TimeSpan.FromSeconds(TempoRestante).ToString().Substring(3));
+        while (true)
+        {
+           yield return new WaitForSeconds(1);
+            TempoRestante -= 1;
+            pointClick.Canvas.RefreshTimerText(TimeSpan.FromSeconds(TempoRestante).ToString().Substring(3));
+            if (TempoRestante <= 0)
+            {
+                SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+                break;
+
+
+            }
+        }
+        
+    }
    
+
     public void CompleteTask(PointClickInteraction pointClick) 
     {
         pointClick.taskCompleted -= CompleteTask;
-        
+        StopCoroutine(Timer);
+
 
 
 

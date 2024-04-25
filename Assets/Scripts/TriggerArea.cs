@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerArea : MonoBehaviour
 {
+    public Doors door;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other != null)
@@ -19,6 +21,11 @@ public class TriggerArea : MonoBehaviour
                     {
                         pointClick.taskCompletion[i] = true;
                         pointClick.refreshText();
+                        if (door != null)
+                        {
+                            if (!door.GetComponentInChildren<Collider>().enabled) 
+                            door.closeDoor();
+                        }
                     }
                 }
             }

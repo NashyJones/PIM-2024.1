@@ -9,6 +9,8 @@ public class Doors : MonoBehaviour, IInteractable
     public string animationClose;
     public float closeTime;
     public int RequiredTasks = -1;
+    public int DoorBlocker = -1;
+
 
 
     public void Interact(PointClickInteraction pointClick)
@@ -23,6 +25,17 @@ public class Doors : MonoBehaviour, IInteractable
                     return;
                 }
             }
+        }
+        if (DoorBlocker != -1) 
+        {
+            for (int i = DoorBlocker; i < pointClick.taskCompletion.Count; i++)
+            {
+                if (pointClick.taskCompletion[i])
+                {
+                    return;
+                }
+            }
+           
         }
         GetComponent<Animation>().Play(animationOpen);
         GetComponentInChildren<Collider>().enabled = false;

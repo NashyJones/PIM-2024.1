@@ -12,10 +12,14 @@ public class CanvasTextScript : MonoBehaviour
     public GameObject Bar;
     private AnimationCurve CurrentCurve;
     private Coroutine coroutine;
+    public TMPro.TextMeshProUGUI TimerText;
    
 
 
-
+    public void RefreshTimerText(string text)
+    {
+        TimerText.text = text;
+    }
 
 
     
