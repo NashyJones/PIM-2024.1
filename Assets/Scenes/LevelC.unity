@@ -494,6 +494,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!43 &226825142
 Mesh:
   m_ObjectHideFlags: 0
@@ -1589,6 +1591,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!43 &786684210
 Mesh:
   m_ObjectHideFlags: 0
@@ -2623,6 +2627,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!65 &1051015148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4004,6 +4010,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!1 &1824807132
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,6 +5183,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3634
       objectReference: {fileID: 0}
+    - target: {fileID: 3858367056648846192, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3988846698830279543, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5255,6 +5267,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 532299407}
+    - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5223044596789260639, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 

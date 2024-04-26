@@ -1220,7 +1220,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 0
+  Tempo: 10
   TempoRestante: 0
 --- !u!4 &507909535 stripped
 Transform:
@@ -1931,7 +1931,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 0
+  Tempo: 10
   TempoRestante: 0
 --- !u!43 &991617323
 Mesh:
@@ -4774,7 +4774,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 0
+  Tempo: 10
   TempoRestante: 0
 --- !u!43 &2132774789
 Mesh:
@@ -5193,6 +5193,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3883
       objectReference: {fileID: 0}
+    - target: {fileID: 3858367056648846192, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3988846698830279543, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5273,6 +5277,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 8433815}
+    - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Enabled
       value: 1

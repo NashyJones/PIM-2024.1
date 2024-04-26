@@ -925,6 +925,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!1 &268009440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1072,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!850595691 &364116246
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -2225,6 +2229,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!43 &834783650
 Mesh:
   m_ObjectHideFlags: 0
@@ -3576,6 +3582,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!65 &1365495118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5131,6 +5139,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!43 &2140533637
 Mesh:
   m_ObjectHideFlags: 0
@@ -5536,6 +5546,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3637
       objectReference: {fileID: 0}
+    - target: {fileID: 3858367056648846192, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3988846698830279543, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5616,6 +5630,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 532299407}
+    - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: Tempo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5223044596789260639, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5870,6 +5888,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  Tempo: 10
+  TempoRestante: 0
 --- !u!4 &269384178411291000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3043562107626932067, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
