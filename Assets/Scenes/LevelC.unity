@@ -1223,7 +1223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-279600
+  m_Name: pb_Mesh-3734196
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2933,19 +2933,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[0]'
-      value: "Beber \xE1gua"
+      value: "Beber \xE1gua no bebedouro"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[1]'
-      value: Pegar documentos na mesa de um colega
+      value: "Pegar documenta\xE7\xE3o na mesa do colega"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[2]'
-      value: "Comprar um snack na m\xE1quina"
+      value: "Pegar um lanche na m\xE1quina"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[3]'
-      value: "Lavar as m\xE3os"
+      value: "Lavar as m\xE3os no banheiro"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: taskCompletion.Array.size
@@ -5303,6 +5303,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1756646514}
+    - target: {fileID: 5881152364894715289, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d12478e5c82d2a4a88c2b05abf46f36, type: 2}
     - target: {fileID: 5944757358925452859, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5323,6 +5327,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 834783650}
+    - target: {fileID: 6667067435571279631, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ffeb8a0143280714a9c552e29964bce4, type: 2}
     - target: {fileID: 6856045919571557532, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5387,6 +5395,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3637
       objectReference: {fileID: 0}
+    - target: {fileID: 8090875436666024536, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6de2fc53f1425ed4ab64a36b7a595a97, type: 2}
     - target: {fileID: 8270362768663512122, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 

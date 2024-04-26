@@ -3174,27 +3174,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[0]'
-      value: Pegar o livro na sua mesa
+      value: Pegar livro na sua mesa
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[1]'
-      value: "Levar para o arm\xE1rio do chefe"
+      value: Levar livro pra sala do gerente
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[2]'
-      value: Pegar um papel na copiadora
+      value: "Usar copiadora da secret\xE1ria"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[3]'
-      value: Pegar um documento na sala de armazenamento
+      value: Pegar arquivo no almoxarifado
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[4]'
-      value: "Pegar garrafa de \xE1gua para regar"
+      value: "Pegar garrafa de \xE1gua na sala de reuni\xF5es"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: 'taskNames.Array.data[5]'
-      value: "Regar o cactus da sala de reuni\xF5es"
+      value: "Regar planta na sala de reuni\xF5es"
       objectReference: {fileID: 0}
     - target: {fileID: 5486904550271554140, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: taskCompletion.Array.size
@@ -5622,6 +5622,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 579651954}
+    - target: {fileID: 4946003360944563415, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2ff5fbe0055a38c4eb2a19667b2d0f23, type: 2}
     - target: {fileID: 4949482464762722829, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5666,6 +5670,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1756646514}
+    - target: {fileID: 5881152364894715289, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97144df151ec22241800827b69bab114, type: 2}
     - target: {fileID: 5944757358925452859, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5762,6 +5770,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3640
       objectReference: {fileID: 0}
+    - target: {fileID: 8090875436666024536, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6de2fc53f1425ed4ab64a36b7a595a97, type: 2}
     - target: {fileID: 8270362768663512122, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
       value: 
