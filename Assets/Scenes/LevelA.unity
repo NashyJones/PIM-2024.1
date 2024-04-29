@@ -1220,7 +1220,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 10
+  Tempo: 4
   TempoRestante: 0
 --- !u!4 &507909535 stripped
 Transform:
@@ -1931,7 +1931,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 10
+  Tempo: 4
   TempoRestante: 0
 --- !u!1 &835659506
 GameObject:
@@ -4587,7 +4587,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 10
+  Tempo: 6
   TempoRestante: 0
 --- !u!43 &1915047604
 Mesh:
@@ -4879,7 +4879,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  Tempo: 10
+  Tempo: 6
   TempoRestante: 0
 --- !u!43 &2132774789
 Mesh:
@@ -5388,7 +5388,7 @@ PrefabInstance:
       objectReference: {fileID: 8433815}
     - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: Tempo
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5179543041472531670, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Enabled
