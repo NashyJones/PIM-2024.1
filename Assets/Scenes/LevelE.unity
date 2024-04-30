@@ -5551,6 +5551,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Controle remoto
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: bc2b5fa0084e6b141abb40113c0becf6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c5fa50ba134a4c84abbbdad17e476d0b, type: 2}
+    - target: {fileID: 7646715699437254486, guid: bc2b5fa0084e6b141abb40113c0becf6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 921a2639b04f4d5429a4e0032ba1f733, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
