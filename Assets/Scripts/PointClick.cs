@@ -22,7 +22,7 @@ public class PointClickInteraction : MonoBehaviour
 
    public  OnTaskCompleted taskCompleted;
 
-    private bool isMiniGame = false;
+    public bool isMiniGame = false;
     public int tamanhoraycast;
 
 
@@ -65,14 +65,9 @@ public class PointClickInteraction : MonoBehaviour
                 if (obj.GetComponent<IInteractable>() != null)
                 {
                     obj.GetComponent<IInteractable>().Interact(this);
+                   
 
-                   if (obj.GetComponent<IInteractable>().hasCurve() != null)
-                    {
-                        isMiniGame = true;
-                        Canvas.startMinigame(obj.GetComponent<IInteractable>().hasCurve());
-                        GetComponent<FirstPersonController>().enabled = false;
-                        
-                    }
+                  
                     
                 }
                        

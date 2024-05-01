@@ -26,17 +26,26 @@ public class Pickable : MonoBehaviour, IInteractable
                 if (Lock == pointClick.inventory[i])
                 {
                     complete = true;
-
+                    
                     break;
 
                 }
             }
+            
             if (!complete)
             {
+
                 return;
             }
 
         }
+
+        
+        pointClick.isMiniGame = true;
+        pointClick.Canvas.startMinigame(hasCurve());
+        pointClick.GetComponent<FirstPersonController>().enabled = false;
+        
+
         pointClick.taskCompleted += CompleteTask;
         Timer = StartCoroutine(TimerCoroutine(pointClick));
 
