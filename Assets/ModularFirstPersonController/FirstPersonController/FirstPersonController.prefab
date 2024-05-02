@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Tarefas do dia:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5ae4ecc424bd9dd4f92adc8e609c2b5d, type: 2}
+  m_sharedMaterial: {fileID: -2137469988761980977, guid: 5ae4ecc424bd9dd4f92adc8e609c2b5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -347,6 +347,7 @@ MonoBehaviour:
   taskNames: []
   taskCompletion: 
   HiddenTasks: -1
+  isMiniGame: 0
   tamanhoraycast: 2
   Canvas: {fileID: 8570918498499235130}
   inventory: []
@@ -1197,8 +1198,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Pegar caf\xE9"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5ae4ecc424bd9dd4f92adc8e609c2b5d, type: 2}
+  m_sharedMaterial: {fileID: -2137469988761980977, guid: 5ae4ecc424bd9dd4f92adc8e609c2b5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
