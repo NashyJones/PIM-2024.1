@@ -15,6 +15,9 @@ public class Pickable : MonoBehaviour, IInteractable
     [HideInInspector]
     public float TempoRestante;
     private Coroutine Timer;
+    public AudioSource pegarSfx;
+
+    public Renderer meshRenderer;
 
     public void Interact(PointClickInteraction pointClick)
     {
@@ -100,9 +103,11 @@ public class Pickable : MonoBehaviour, IInteractable
 
         if (ShouldDisappear)
         {
-            gameObject.SetActive(false);
+            meshRenderer.enabled = false;
         }
-
+        
+        pegarSfx.Play();
+        
 
     }
 

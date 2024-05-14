@@ -13,6 +13,8 @@ public class CanvasTextScript : MonoBehaviour
     private AnimationCurve CurrentCurve;
     private Coroutine coroutine;
     public TMPro.TextMeshProUGUI TimerText;
+
+    public AudioSource finishTimer;
    
 
 
@@ -152,7 +154,7 @@ public class CanvasTextScript : MonoBehaviour
     }
     public void finishMinigame()
     {
-
+        finishTimer.Play();
         Minigamepannel.SetActive(false);
         StopCoroutine(coroutine);
     }
