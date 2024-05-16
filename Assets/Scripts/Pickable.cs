@@ -15,7 +15,9 @@ public class Pickable : MonoBehaviour, IInteractable
     [HideInInspector]
     public float TempoRestante;
     private Coroutine Timer;
-    public AudioSource pegarSfx;
+    public AudioSource sfx;
+
+    public AudioSource somContinuo;
 
     public Renderer meshRenderer;
 
@@ -106,7 +108,7 @@ public class Pickable : MonoBehaviour, IInteractable
             meshRenderer.enabled = false;
         }
         
-        pegarSfx.Play();
+        sfx.Play();
         
 
     }

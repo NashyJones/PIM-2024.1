@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerArea : MonoBehaviour
 {
     public Doors door;
+    public AudioSource sfx;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,6 +26,7 @@ public class TriggerArea : MonoBehaviour
                         {
                             if (!door.GetComponentInChildren<Collider>().enabled) 
                             door.closeDoor();
+
                         }
                     }
                 }
