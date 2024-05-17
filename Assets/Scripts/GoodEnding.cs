@@ -12,7 +12,7 @@ public class GoodEnding : MonoBehaviour, IInteractable
     {
         if (IsGoodEnding)
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("GoodEnding");
 
         }
 

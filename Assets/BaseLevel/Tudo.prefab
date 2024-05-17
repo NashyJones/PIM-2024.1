@@ -26567,6 +26567,7 @@ Transform:
   - {fileID: 264875635552330928}
   - {fileID: 7350495920991178066}
   - {fileID: 4730285600233025712}
+  - {fileID: 2850099682126924645}
   m_Father: {fileID: 3009162960866752215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5910461147859277232
@@ -43757,6 +43758,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   Tempo: 0
   TempoRestante: 0
+  sfx: {fileID: 0}
+  somContinuo: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!65 &3799331979555584931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53209,6 +53213,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4187268052012510, guid: b608e409deb58b64ab5822eb261da609, type: 3}
   m_PrefabInstance: {fileID: 6917133047569117479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6950791583899362530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 723142931889623253}
+    m_Modifications:
+    - target: {fileID: 5186944528144772992, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_Name
+      value: littleStairLight (White) (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8003744
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944529189614066, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.784
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944529189614066, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186944529189614066, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.495
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+--- !u!4 &2850099682126924645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5186944528144772999, guid: 7eaadca71fab77447860a121cc907048, type: 3}
+  m_PrefabInstance: {fileID: 6950791583899362530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6969172108099877363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56086,6 +56164,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   Tempo: 0
   TempoRestante: 0
+  sfx: {fileID: 0}
+  somContinuo: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!65 &1438991819493204364
 BoxCollider:
   m_ObjectHideFlags: 0

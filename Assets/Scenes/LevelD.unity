@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.009012734, g: 0.013102855, b: 0.02050359, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8715,6 +8715,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52338121fc4936848abdd88c68e2824a, type: 3}
+--- !u!1 &1489508806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7243913688165027134, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+  m_PrefabInstance: {fileID: 269384178411290995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1489508807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489508806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a171b1a2da4a4f842a978820b56ff177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: 0
 --- !u!1001 &1490884235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12097,7 +12115,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-599280
+  m_Name: pb_Mesh-171946
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -14994,7 +15012,7 @@ PrefabInstance:
       objectReference: {fileID: 1021443797}
     - target: {fileID: 7367574034908251392, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: LevelName
-      value: LevelE
+      value: CutsceneE
       objectReference: {fileID: 0}
     - target: {fileID: 7817207705855370900, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       propertyPath: m_Mesh
@@ -15157,6 +15175,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 268009441}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7243913688165027134, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1489508807}
     - targetCorrespondingSourceObject: {fileID: 7925590700103631004, guid: 3d9d25872bfe73349a698f0b6b793a74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 892904081}
