@@ -103,11 +103,10 @@ public class Pickable : MonoBehaviour, IInteractable
         
         if (ShouldDisappear)
         {
-            sfx.Play();
             meshRenderer.enabled = false;
         }
 
-        
+        sfx.Play();
         somContinuo.Stop();
 
        
