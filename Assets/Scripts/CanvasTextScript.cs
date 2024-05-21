@@ -1,6 +1,11 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class CanvasTextScript : MonoBehaviour
 
@@ -13,6 +18,12 @@ public class CanvasTextScript : MonoBehaviour
     private AnimationCurve CurrentCurve;
     private Coroutine coroutine;
     public TMPro.TextMeshProUGUI TimerText;
+    public GameObject pauseCanvas;
+    public GameObject ButtonMenu;
+    public GameObject HowToPlay;
+    public GameObject[] instructions;
+    private int howtoplayindex;
+    public GameObject HUD;
 
     public AudioSource finishTimer;
    
@@ -158,8 +169,65 @@ public class CanvasTextScript : MonoBehaviour
         Minigamepannel.SetActive(false);
         StopCoroutine(coroutine);
     }
-        
 
+    public void quitgame()
+    {
+        //Application.Quit(); <- saporra serve pa sair do jogo :D
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+    public void pausegame ()
+    {
+        pauseCanvas.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        pointClick.pause(true);
+        HUD.SetActive(false);
+       
+
+
+
+    }
+    public void resumegame ()
+    {
+        pauseCanvas.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        pointClick.pause(false);
+        HUD.SetActive(true);
+    }
+
+    public void howtoplay ()
+    {
+        howtoplayindex = 0;
+        ButtonMenu.SetActive(false);
+        HowToPlay.SetActive(true);
+        showInstructions();
+
+
+        
+    }
+    public void showInstructions ()
+    {
+        if (howtoplayindex < instructions.Length)
+        {
+            instructions[Mathf.Clamp(howtoplayindex - 1, 0, instructions.Length-1)].SetActive(false);
+            instructions[howtoplayindex].SetActive(true);
+
+        }
+        else
+        {
+            for (int i = 0; i < instructions.Length; i++)
+            {
+                instructions[i].SetActive(false);
+            }
+           ButtonMenu.SetActive(true);
+            HowToPlay.SetActive(false);
+            howtoplayindex = -1;
+
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -170,6 +238,33 @@ public class CanvasTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (howtoplayindex>=0)
+            {
+                howtoplayindex++;
+                showInstructions();
+
+            }
+            
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+
+            if (!pauseCanvas.activeSelf)
+            {
+                pausegame();
+
+            }
+            else
+            {
+                resumegame();
+            }
+        }
+
+       
     }
+    
+
+   
 }

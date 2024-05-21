@@ -10,6 +10,12 @@ public class PlayButton : MonoBehaviour
     {
         SceneManager.LoadScene(level);  
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     // Start is called before the first frame update
     void Start()
     {

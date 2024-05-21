@@ -82,4 +82,9 @@ public class PointClickInteraction : MonoBehaviour
         isMiniGame = false;
 
     }
+
+    public void pause (bool _pause)
+    {
+        GetComponent<FirstPersonController>().enabled = !_pause;
+    }
 }
