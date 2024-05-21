@@ -16,9 +16,7 @@ public class Pickable : MonoBehaviour, IInteractable
     public float TempoRestante;
     private Coroutine Timer;
     public AudioSource sfx;
-
     public AudioSource somContinuo;
-
     public Renderer meshRenderer;
 
     public void Interact(PointClickInteraction pointClick)
@@ -79,7 +77,7 @@ public class Pickable : MonoBehaviour, IInteractable
     }
    
 
-    public void CompleteTask(PointClickInteraction pointClick) 
+    public void CompleteTask(PointClickInteraction pointClick)
     {
         pointClick.taskCompleted -= CompleteTask;
         StopCoroutine(Timer);
@@ -101,15 +99,18 @@ public class Pickable : MonoBehaviour, IInteractable
         //esse muda conforme o script
 
         pointClick.inventory.Add(Key);
-
-
+        
+        
         if (ShouldDisappear)
         {
+            sfx.Play();
             meshRenderer.enabled = false;
         }
+
         
-        sfx.Play();
-        
+        somContinuo.Stop();
+
+       
 
     }
 

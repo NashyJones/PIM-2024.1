@@ -28,6 +28,8 @@ public class TriggerArea : MonoBehaviour
                             door.closeDoor();
 
                         }
+                        
+                        sfx.Play();
                     }
                 }
             }
