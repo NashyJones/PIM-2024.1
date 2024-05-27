@@ -1959,7 +1959,7 @@ MonoBehaviour:
   TempoRestante: 0
   sfx: {fileID: 268009446}
   somContinuo: {fileID: 0}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 268009443}
 --- !u!82 &268009446
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4616,7 +4616,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a784fc880c60c474c97842b72e233809, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12036,7 +12036,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-161658
+  m_Name: pb_Mesh-49608
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
